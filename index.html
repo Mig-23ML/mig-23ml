@@ -23,7 +23,7 @@
             font-size: 4em;
         }
         h2 {
-            margin: 15px 0 5px 0;
+            margin: 0;
             color: #9370db;
             font-size: 2.5em;
         }
@@ -59,8 +59,13 @@
         }
         .profile-row {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 10px;
+        }
+        .profile-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .profile p {
             color: #d8bfd8;
@@ -103,9 +108,11 @@
         <div class="profile">
             <div class="profile-row">
                 <div class="profile-pic"></div>
-                <h2>Mig-23ML</h2>
+                <div class="profile-text">
+                    <h2>Mig-23ML</h2>
+                    <p>Probably Playing</p>
+                </div>
             </div>
-            <p>Probably Playing</p>
         </div>
         <div class="section">
             <h2>Interests</h2>
