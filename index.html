@@ -13,11 +13,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
         }
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 5px;
             color: #b19cd9;
         }
         h2 {
@@ -28,22 +28,62 @@
             margin: 5px 0;
             color: #d8bfd8;
         }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-top: 20px;
+        }
         .section {
-            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .discord {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .discord p {
+            color: #d8bfd8;
+        }
+        .friends {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .friend-box {
+            width: 100px;
+            height: 60px;
+            background-color: #2c003e;
+            border: 2px solid #9370db;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Hi, I'm Mig</h1>
-    <div class="section">
-        <h2>Personal Info</h2>
-        <p>Age: 16</p>
-        <p>Location: Pomerania, Poland</p>
+    <p>Location: Pomerania, Poland</p>
+    <div class="container">
+        <div class="discord">
+            <h2>Discord</h2>
+            <p>Mig#1234</p>
+            <p>Reach out for gaming or IT chat!</p>
+        </div>
+        <div class="section">
+            <h2>Interests</h2>
+            <p>Games: War Thunder, Rainbow Six Siege</p>
+            <p>IT stuff</p>
+            <p>Hater of C+, fan of Python</p>
+        </div>
     </div>
-    <div class="section">
-        <h2>Interests</h2>
-        <p>Games: War Thunder, Rainbow Six Siege</p>
-        <p>IT stuff</p>
+    <div class="friends">
+        <div class="friend-box"></div>
+        <div class="friend-box"></div>
+        <div class="friend-box"></div>
+        <div class="friend-box"></div>
+        <div class="friend-box"></div>
     </div>
 </body>
 </html>
