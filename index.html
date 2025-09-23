@@ -26,11 +26,18 @@
             margin: 0;
             color: #9370db;
             font-size: 2.5em;
+            white-space: nowrap;
         }
         p {
             margin: 5px 0;
             color: #d8bfd8;
             font-size: 1.2em;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #9370db;
+            margin: 10px 0;
+            width: 100%;
         }
         .container {
             display: flex;
@@ -88,13 +95,15 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            border: 2px solid #9370db;
             overflow: hidden;
+            border: 2px solid #9370db;
+            cursor: pointer;
         }
-        .profile-pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .embed-wrapper {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
         }
         .friends-bottom {
             display: flex;
@@ -121,11 +130,7 @@
             border: 2px solid #9370db;
             border-radius: 5px;
             overflow: hidden;
-        }
-        .friend-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -137,7 +142,12 @@
             <div class="profile-top">
                 <div class="profile-row">
                     <a href="https://imgur.com/a/zwWCzuO" target="_blank" class="profile-pic">
-                        <img src="https://i.imgur.com/placeholder.png" alt="Profile Picture">
+                        <div class="embed-wrapper">
+                            <blockquote class="imgur-embed-pub" lang="en" data-id="a/zwWCzuO" data-context="false">
+                                <a href="//imgur.com/a/zwWCzuO"></a>
+                            </blockquote>
+                            <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                        </div>
                     </a>
                     <div class="profile-text">
                         <h2>Mig-23ML</h2>
