@@ -130,6 +130,11 @@
             border-radius: 5px;
             overflow: hidden;
             cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        .friend-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #9370db;
         }
         .friend-box img {
             width: 100%;
@@ -157,13 +162,13 @@
             <div class="friends-bottom">
                 <div class="friends-title">Friends of mine</div>
                 <div class="friends-boxes">
-                    <a href="friend1.png" target="_blank" class="friend-box">
+                    <a href="https://discord.com/users/1130186742260052128" target="_blank" class="friend-box" title="Friend 1 (Discord)">
                         <img src="friend1.png" alt="Friend 1">
                     </a>
-                    <a href="friend2.png" target="_blank" class="friend-box">
+                    <a href="https://discord.com/users/985930351505444915" target="_blank" class="friend-box" title="Friend 2 (Discord)">
                         <img src="friend2.png" alt="Friend 2">
                     </a>
-                    <a href="friend3.png" target="_blank" class="friend-box">
+                    <a href="https://discord.com/users/710441272292147260" target="_blank" class="friend-box" title="Friend 3 (Discord)">
                         <img src="friend3.png" alt="Friend 3">
                     </a>
                 </div>
