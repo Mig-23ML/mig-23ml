@@ -22,6 +22,12 @@
             color: #b19cd9;
             font-size: 4em;
         }
+        h2 {
+            margin: 0;
+            color: #9370db;
+            font-size: 2.5em;
+            white-space: nowrap;
+        }
         p {
             margin: 5px 0;
             color: #d8bfd8;
@@ -36,20 +42,6 @@
             border-radius: 10px;
             padding: 20px;
             background-color: rgba(12, 0, 35, 0.7);
-        }
-        .lanyard {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 0.8;
-            width: 100%;
-        }
-        iframe {
-            border: none;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 400px;
-            height: 200px;
         }
         .section {
             display: flex;
@@ -67,13 +59,27 @@
             margin-bottom: 10px;
             width: 100%;
         }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.3em;
+            flex: 0.8;
+        }
+        iframe {
+            border: none;
+            width: 300px;
+            height: 180px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
         .friends-bottom {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 15px;
             border-top: 2px solid #9370db;
-            padding-top: 20px;
+            padding-top: 15px;
             width: 100%;
         }
         .friends-title {
@@ -104,31 +110,16 @@
             height: 100%;
             object-fit: cover;
         }
-        @media (max-width: 800px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-                width: 90%;
-            }
-            iframe {
-                height: 180px;
-            }
-            .section {
-                border-left: none;
-                border-top: 2px solid #9370db;
-                margin-left: 0;
-                padding-left: 0;
-                padding-top: 20px;
-            }
-        }
     </style>
 </head>
 <body>
     <h1>Hi, I'm Mig</h1>
     <p>Location: Pomerania, Poland</p>
     <div class="container">
-        <div class="lanyard">
-            <iframe src="https://lanyard.cnrad.dev/api/696030267395276820?theme=dark&bg=00000000&borderRadius=10px&idleMessage=Probably%20doing%20something%20else"></iframe>
+        <div class="profile">
+            <!-- Lanyard Discord Presence Embed -->
+            <iframe src="https://lanyard.cnrad.dev/api/696030267395276820?theme=dark&bg=0d0d2b&borderRadius=8px&hideDiscrim=true&animated=true&idleMessage=Still%20Alive" allowtransparency="true"></iframe>
+
             <div class="friends-bottom">
                 <div class="friends-title">Friends of mine</div>
                 <div class="friends-boxes">
@@ -144,6 +135,7 @@
                 </div>
             </div>
         </div>
+
         <div class="section">
             <h2>Interests</h2>
             <p>Games: War Thunder, Arena Breakout Infinite</p>
