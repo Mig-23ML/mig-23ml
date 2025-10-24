@@ -1,1 +1,16 @@
 https://api.lanyard.rest/v1/users/696030267395276820
+
+
+async function updateDiscordStatus() {
+  consst res = await
+fetch("https://api.lanyard.rest/v1/users/696030267395276820");
+  const data = await res.json();
+  const discord = data.data.discord_status;
+  const activity = 
+data.data.activities[0]?.name || "Nothing Right Now"
+
+document.getElementById("discord-status").innerText = 'Discord: ${discord} (${activity])';
+}
+updateDiscordStatus();
+setInterval(updateDiscordStatus,1000);
+<p id='discord-status'>Loading Discord status... </p>
