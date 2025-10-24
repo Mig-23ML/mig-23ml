@@ -62,24 +62,25 @@
         .profile {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             font-size: 1.3em;
             flex: 0.8;
         }
-        iframe {
+        .lanyard {
+            width: 100%;
+            max-width: 400px;
             border: none;
-            width: 300px;
-            height: 180px;
-            border-radius: 8px;
+            height: 128px;
+            border-radius: 10px;
             overflow: hidden;
         }
         .friends-bottom {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 20px;
             border-top: 2px solid #9370db;
-            padding-top: 15px;
+            padding-top: 20px;
             width: 100%;
         }
         .friends-title {
@@ -117,8 +118,12 @@
     <p>Location: Pomerania, Poland</p>
     <div class="container">
         <div class="profile">
-            <!-- Lanyard Discord Presence Embed -->
-            <iframe src="https://lanyard.cnrad.dev/api/696030267395276820?theme=dark&bg=0d0d2b&borderRadius=8px&hideDiscrim=true&animated=true" allowtransparency="true"></iframe>
+            <!-- Clean Lanyard Embed (no idle message) -->
+            <iframe
+                class="lanyard"
+                src="https://lanyard.cnrad.dev/api/696030267395276820?theme=dark&bg=0d0d2b&borderRadius=10px&hideDiscrim=true&animated=true"
+                allowtransparency="true">
+            </iframe>
 
             <div class="friends-bottom">
                 <div class="friends-title">Friends of mine</div>
