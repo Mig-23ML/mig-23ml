@@ -1,152 +1,369 @@
 <!DOCTYPE html>
+  
 <html lang="en">
+  
 <head>
+  
     <meta charset="UTF-8">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <title>About Me</title>
+  
     <style>
+  
         body {
+  
             font-family: Arial, sans-serif;
+  
             background: linear-gradient(to bottom right, #0d0d2b, #2c003e, #1a001a);
+  
             color: #c0c0ff;
+  
             display: flex;
+  
             flex-direction: column;
+  
             align-items: center;
+  
             justify-content: center;
+  
             min-height: 100vh;
+  
             text-align: center;
+  
             padding: 20px;
+  
         }
+  
         h1 {
+  
             margin-bottom: 5px;
+  
             color: #b19cd9;
+  
             font-size: 4em;
+  
         }
+  
         h2 {
+  
             margin: 0;
+  
             color: #9370db;
+  
             font-size: 2.5em;
+  
             white-space: nowrap;
+  
         }
+  
         p {
+  
             margin: 5px 0;
+  
             color: #d8bfd8;
+  
             font-size: 1.2em;
+  
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            width: 70%;
-            margin-top: 20px;
-            border: 2px solid #9370db;
-            border-radius: 10px;
-            padding: 20px;
-            background-color: rgba(12, 0, 35, 0.7);
-        }
-        .section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            border-left: 2px solid #9370db;
-            padding-left: 20px;
-            margin-left: 20px;
-            font-size: 1.4em;
-            flex: 1.2;
-        }
-        .section p {
-            border-bottom: 1px solid #9370db;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            font-size: 1.3em;
-            flex: 0.8;
-        }
-        .lanyard {
-            width: 100%;
-            max-width: 400px;
+  
+        hr {
+  
             border: none;
-            height: 98px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .friends-bottom {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
+  
             border-top: 2px solid #9370db;
-            padding-top: 20px;
+  
+            margin: 10px 0;
+  
             width: 100%;
+  
         }
-        .friends-title {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            color: #b19cd9;
-        }
-        .friends-boxes {
+  
+        .container {
+  
             display: flex;
-            gap: 10px;
-        }
-        .friend-box {
-            width: 80px;
-            height: 50px;
-            background-color: #2c003e;
+  
+            justify-content: space-between;
+  
+            width: 70%;
+  
+            margin-top: 20px;
+  
             border: 2px solid #9370db;
-            border-radius: 5px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.3s ease;
+  
+            border-radius: 10px;
+  
+            padding: 20px;
+  
+            background-color: rgba(12, 0, 35, 0.7);
+  
         }
-        .friend-box:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px #9370db;
+  
+        .section {
+  
+            display: flex;
+  
+            flex-direction: column;
+  
+            align-items: flex-start;
+  
+            border-left: 2px solid #9370db;
+  
+            padding-left: 20px;
+  
+            margin-left: 20px;
+  
+            font-size: 1.4em;
+  
+            flex: 1.2;
+  
         }
-        .friend-box img {
+  
+        .section p {
+  
+            border-bottom: 1px solid #9370db;
+  
+            padding-bottom: 10px;
+  
+            margin-bottom: 10px;
+  
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+  
         }
+  
+        .profile {
+  
+            display: flex;
+  
+            flex-direction: column;
+  
+            align-items: flex-start;
+  
+            font-size: 1.3em;
+  
+            flex: 0.8;
+  
+        }
+  
+        .profile-top {
+  
+            display: flex;
+  
+            flex-direction: column;
+  
+            width: 100%;
+  
+        }
+  
+        .profile-row {
+  
+            display: flex;
+  
+            align-items: flex-start;
+  
+            gap: 10px;
+  
+        }
+  
+        .profile-text {
+  
+            display: flex;
+  
+            flex-direction: column;
+  
+            justify-content: center;
+  
+            white-space: nowrap;
+  
+        }
+  
+        .profile p {
+  
+            color: #d8bfd8;
+  
+        }
+  
+        .profile-pic {
+  
+            width: 80px;
+  
+            height: 80px;
+  
+            border-radius: 50%;
+  
+            overflow: hidden;
+  
+            border: 2px solid #9370db;
+  
+            cursor: pointer;
+  
+        }
+  
+        .profile-pic img {
+  
+            width: 100%;
+  
+            height: 100%;
+  
+            object-fit: cover;
+  
+        }
+  
+        .friends-bottom {
+  
+            display: flex;
+  
+            flex-direction: column;
+  
+            align-items: center;
+  
+            margin-top: 20px;
+  
+            border-top: 2px solid #9370db;
+  
+            padding-top: 20px;
+  
+            width: 100%;
+  
+        }
+  
+        .friends-title {
+  
+            font-size: 1.8em;
+  
+            margin-bottom: 10px;
+  
+            color: #b19cd9;
+  
+        }
+  
+        .friends-boxes {
+  
+            display: flex;
+  
+            gap: 10px;
+  
+        }
+  
+        .friend-box {
+  
+            width: 80px;
+  
+            height: 50px;
+  
+            background-color: #2c003e;
+  
+            border: 2px solid #9370db;
+  
+            border-radius: 5px;
+  
+            overflow: hidden;
+  
+            cursor: pointer;
+  
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+  
+        }
+  
+        .friend-box:hover {
+  
+            transform: scale(1.1);
+  
+            box-shadow: 0 0 15px #9370db;
+  
+        }
+  
+        .friend-box img {
+  
+            width: 100%;
+  
+            height: 100%;
+  
+            object-fit: cover;
+  
+        }
+  
     </style>
+  
 </head>
+  
 <body>
+  
     <h1>Hi, I'm Mig</h1>
+  
     <p>Location: Pomerania, Poland</p>
+  
     <div class="container">
+  
         <div class="profile">
-            <!-- Clean Lanyard Embed (no idle message) -->
-            <iframe
-                class="lanyard"
-                src="https://lanyard.cnrad.dev/api/696030267395276820?theme=dark&bg=15002a&borderRadius=8px&hideDiscrim=true&animated=true"
-                allowtransparency="true">
-            </iframe>
-
-            <div class="friends-bottom">
-                <div class="friends-title">Friends of mine</div>
-                <div class="friends-boxes">
-                    <a href="https://discord.com/users/1130186742260052128" target="_blank" class="friend-box" title="Friend 1 (Discord)">
-                        <img src="friend1.png" alt="Friend 1">
+  
+            <div class="profile-top">
+  
+                <div class="profile-row">
+  
+                    <a href="pfp.png" target="_blank" class="profile-pic">
+  
+                        <img src="pfp.png" alt="Profile Picture">
+  
                     </a>
-                    <a href="https://discord.com/users/985930351505444915" target="_blank" class="friend-box" title="Friend 2 (Discord)">
-                        <img src="friend2.png" alt="Friend 2">
-                    </a>
-                    <a href="https://discord.com/users/710441272292147260" target="_blank" class="friend-box" title="Friend 3 (Discord)">
-                        <img src="friend3.png" alt="Friend 3">
-                    </a>
+  
+                    <div class="profile-text">
+  
+                        <h2>Mig-23ML</h2>
+  
+                        <p>Probably Playing War thunder</p>
+  
+                    </div>
+  
                 </div>
+  
             </div>
+  
+            <div class="friends-bottom">
+  
+                <div class="friends-title">Friends of mine</div>
+  
+                <div class="friends-boxes">
+  
+                    <a href="https://discord.com/users/1130186742260052128" target="_blank" class="friend-box" title="Friend 1 (Discord)">
+  
+                        <img src="friend1.png" alt="Friend 1">
+  
+                    </a>
+  
+                    <a href="https://discord.com/users/985930351505444915" target="_blank" class="friend-box" title="Friend 2 (Discord)">
+  
+                        <img src="friend2.png" alt="Friend 2">
+  
+                    </a>
+  
+                    <a href="https://discord.com/users/710441272292147260" target="_blank" class="friend-box" title="Friend 3 (Discord)">
+  
+                        <img src="friend3.png" alt="Friend 3">
+  
+                    </a>
+  
+                </div>
+  
+            </div>
+  
         </div>
-
+  
         <div class="section">
+  
             <h2>Interests</h2>
+  
             <p>Games: War Thunder, Arena Breakout Infinite</p>
+  
             <p>IT stuff</p>
+  
             <p>Hater of C+, fan of Python</p>
+  
         </div>
+  
     </div>
+  
 </body>
-</html>
+  
+</html>  
